@@ -6,7 +6,7 @@
                 <img src="../assets/logo.png" alt="">
             </div>
             <!-- 登录表单区 ref的引用就可以获取到表单的实例对象-->
-            <el-form  ref="loginFormRef" label-width="0px" class="input_box" :model="form" :rules="loginFormRules">
+            <el-form  ref="loginFormRef"  class="input_box" :model="form" :rules="loginFormRules">
                 <!-- 用户名 -->
                 <el-form-item prop="username">
                     <el-input  prefix-icon="el-icon-user-solid" v-model="form.username"></el-input>

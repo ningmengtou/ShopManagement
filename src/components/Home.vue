@@ -13,7 +13,7 @@
       <el-aside :width="isCollapse?'64px':'200px'">
         <!-- 折叠栏 -->
         <div class="toggle_button" @click="toggleCollapse">|||</div>
-        <!-- 侧边栏菜单区 unique-opened 设置每次只能展开一个菜单 router菜单开启路由模式-->
+        <!-- 侧边栏菜单区 unique-opened 设置每次只能展开一个菜单 router菜单开启路由模式 default-active菜单路由激活的链接地址-->
         <el-menu
           background-color="#545c64"
           text-color="#fff"
@@ -92,7 +92,6 @@ export default {
       // 判断状态码为200 表示数据请求成功 成功就让数据列表替换成menusList
       if (res.meta.status != 200) return this.$message.error(res.meta.msg)
       this.menusList = res.data
-      
     },
     // 点击切换菜单的折叠
     toggleCollapse() {
@@ -103,10 +102,8 @@ export default {
     saveNavState(str) {
       window.sessionStorage.setItem('status',str);
       this.activePath = str
-     
     }
   },
- 
 }
 </script>
 
