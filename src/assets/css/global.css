@@ -6,3 +6,19 @@ body,
     padding: 0;
     min-width: 1366px;
 }
+
+.el-breadcrumb {
+    margin-bottom: 20px;
+}
+
+.el-steps {
+    margin: 20px 0;
+}
+
+.ql-editor {
+    min-height: 300px;
+}
+
+.el-popper {
+    top: -20px!important;
+}

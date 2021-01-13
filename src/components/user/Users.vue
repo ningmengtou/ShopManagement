@@ -335,9 +335,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.el-breadcrumb {
-  padding-bottom: 15px;
-}
+
 .el-card {
   line-height: 70px;
 }

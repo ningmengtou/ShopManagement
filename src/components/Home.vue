@@ -71,7 +71,6 @@ export default {
       isCollapse:false,
       // 激活的链接地址
       activePath:''
-      
     }
   },
   // created 生命周期请求数据
